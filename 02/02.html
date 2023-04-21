@@ -1,0 +1,174 @@
+<p>Para aplicar estilos a elementos HTML5, podemos utilizar selectores de elementos, selectores de clase y selectores de ID en CSS.</p>
+<p>Los selectores de elementos se refieren a un tipo de elemento HTML5 específico, como "p", "div", "h1", etc. Por ejemplo, para aplicar un estilo a todos los elementos "p" en un documento HTML5, podemos usar el selector de elementos de CSS como sigue:</p>
+<div>
+<div> </div>
+<div><code><span>p</span> { <span>color</span>: red; } </code></div>
+</div>
+<p>Los selectores de clase nos permiten aplicar estilos a elementos HTML5 con una clase específica. Para asignar una clase a un elemento HTML5, podemos usar el atributo "class" y definir el nombre de la clase. Por ejemplo, podemos definir una clase "destacado" y aplicar estilos a todos los elementos que tengan esa clase como sigue:</p>
+<div>
+<div> </div>
+<div><code><span>.destacado</span> { <span>font-weight</span>: bold; <span>color</span>: blue; } </code></div>
+</div>
+<p>Para aplicar esta clase a un elemento HTML5, podemos agregar el atributo "class" con el valor "destacado", por ejemplo:</p>
+<div>
+<div> </div>
+<div><code><span><span>&lt;<span>p</span> <span>class</span>=<span>"destacado"</span>&gt;</span>Este texto está en negrita y azul<span>&lt;/<span>p</span>&gt;</span> </span></code></div>
+</div>
+<p>Los selectores de ID se utilizan para aplicar estilos a elementos HTML5 con un ID específico. Para asignar un ID a un elemento HTML5, podemos usar el atributo "id" y definir un nombre de ID único. Por ejemplo, podemos definir un ID "encabezado" y aplicar estilos a ese elemento como sigue:</p>
+<div>
+<div> </div>
+<div><code><span>#encabezado</span> { <span>background-color</span>: gray; <span>color</span>: white; } </code></div>
+</div>
+<p>Para aplicar este ID a un elemento HTML5, podemos agregar el atributo "id" con el valor "encabezado", por ejemplo:</p>
+<div>
+<div> </div>
+<div><code><span><span>&lt;<span>header</span> <span>id</span>=<span>"encabezado"</span>&gt;</span> <span>&lt;<span>h1</span>&gt;</span>Mi sitio web<span>&lt;/<span>h1</span>&gt;</span> <span>&lt;/<span>header</span>&gt;</span> </span></code></div>
+</div>
+<p>Es importante tener en cuenta que cada ID debe ser único en un documento HTML5 y no puede ser utilizado en más de un elemento. Además, los selectores de ID tienen una prioridad más alta que los selectores de clase y los selectores de elementos en CSS.</p>
+
+<h3>Reglas de prioridad CSS </h3>
+La regla de orden de selectores CSS establece que el estilo de un elemento se aplica siguiendo el orden en que aparecen los selectores en la regla CSS. Por lo tanto, si hay dos reglas que se aplican al mismo elemento HTML, la regla que aparece en último lugar tendrá prioridad y se aplicará el estilo correspondiente.
+
+En cuanto a la prioridad de una propiedad CSS en diferentes casos, se aplica la siguiente jerarquía:
+
+Regla inline: La propiedad definida en el atributo style de un elemento HTML tiene la máxima prioridad y se aplicará sobre cualquier otra definición de la misma propiedad.
+
+ID: Si hay una regla que selecciona un elemento por su ID (usando el selector #), tendrá prioridad sobre cualquier otra regla que seleccione el mismo elemento por una clase, etiqueta o atributo.
+
+Clase o atributo: Si hay varias reglas que seleccionan el mismo elemento por una clase o atributo, se aplicará la regla que aparece en último lugar.
+
+Etiqueta: Si hay varias reglas que seleccionan el mismo elemento por su etiqueta, se aplicará la regla que aparece en último lugar.
+
+Es importante tener en cuenta que la prioridad de una propiedad CSS también puede verse afectada por la especificidad de los selectores utilizados. En general, se recomienda utilizar selectores específicos y evitar el uso de reglas inline o estilos en línea para facilitar el mantenimiento del código.
+
+<h3>Selectores avanzados</h3>
+<table>
+    <tbody>
+    <tr>
+    <td>Selector de etiqueta</td>
+    <td>tag</td>
+    <td>Selecciona todos los elementos que coinciden con la etiqueta especificada</td>
+    </tr>
+    <tr>
+    <td>Selector de clase</td>
+    <td>.class</td>
+    <td>Selecciona todos los elementos que tienen la clase especificada</td>
+    </tr>
+    <tr>
+    <td>Selector de ID</td>
+    <td>#id</td>
+    <td>Selecciona el elemento con el ID especificado</td>
+    </tr>
+    <tr>
+    <td>Selector de atributo</td>
+    <td>[attr]</td>
+    <td>Selecciona todos los elementos que tienen el atributo especificado</td>
+    </tr>
+    <tr>
+    <td>Selector de atributo y valor</td>
+    <td>[attr="value"]</td>
+    <td>Selecciona todos los elementos que tienen el atributo especificado con el valor especificado</td>
+    </tr>
+    <tr>
+    <td>Selector de atributo y valor que comienza con</td>
+    <td>[attr^="value"]</td>
+    <td>Selecciona todos los elementos que tienen el atributo especificado con un valor que comienza con el valor especificado</td>
+    </tr>
+    <tr>
+    <td>Selector de atributo y valor que termina con</td>
+    <td>[attr$="value"]</td>
+    <td>Selecciona todos los elementos que tienen el atributo especificado con un valor que termina con el valor especificado</td>
+    </tr>
+    <tr>
+    <td>Selector de atributo y valor que contiene</td>
+    <td>[attr*="value"]</td>
+    <td>Selecciona todos los elementos que tienen el atributo especificado con un valor que contiene el valor especificado</td>
+    </tr>
+    <tr>
+    <td>Selector descendiente</td>
+    <td>a b</td>
+    <td>Selecciona todos los elementos b que son descendientes de a</td>
+    </tr>
+    <tr>
+    <td>Selector de hermano adyacente</td>
+    <td>a + b</td>
+    <td>Selecciona el primer elemento b que sigue inmediatamente después del elemento a</td>
+    </tr>
+    <tr>
+    <td>Selector de hermanos</td>
+    <td>.a ~ .b</td>
+    <td>Selecciona todos los elementos b que son hermanos de .a y aparecen después de ella</td>
+    </tr>
+    <tr>
+    <td>Selector universal</td>
+    <td>*</td>
+    <td>Selecciona todos los elementos</td>
+    </tr>
+    </tbody>
+    </table>
+    <table>
+    <tbody>
+    <tr>
+    <td>:active</td>
+    <td>Selecciona el elemento cuando está activo</td>
+    </tr>
+    <tr>
+    <td>:checked</td>
+    <td>Selecciona los elementos de entrada marcados</td>
+    </tr>
+    <tr>
+    <td>:disabled</td>
+    <td>Selecciona los elementos de entrada desactivados</td>
+    </tr>
+    <tr>
+    <td>:empty</td>
+    <td>Selecciona los elementos vacíos</td>
+    </tr>
+    <tr>
+    <td>:enabled</td>
+    <td>Selecciona los elementos de entrada habilitados</td>
+    </tr>
+    <tr>
+    <td>:first</td>
+    <td>Selecciona el primer elemento de su tipo</td>
+    </tr>
+    <tr>
+    <td>:first-child</td>
+    <td>Selecciona el primer elemento hijo</td>
+    </tr>
+    <tr>
+    <td>:focus</td>
+    <td>Selecciona el elemento cuando tiene el foco</td>
+    </tr>
+    <tr>
+    <td>:hover</td>
+    <td>Selecciona el elemento cuando el cursor está encima</td>
+    </tr>
+    <tr>
+    <td>:last-child</td>
+    <td>Selecciona el último elemento hijo</td>
+    </tr>
+    <tr>
+    <td>:link</td>
+    <td>Selecciona los enlaces no visitados</td>
+    </tr>
+    <tr>
+    <td>:not</td>
+    <td>Selecciona elementos que no cumplen con un criterio</td>
+    </tr>
+    <tr>
+    <td>:nth-child</td>
+    <td>Selecciona elementos según su posición en relación a otros hijos</td>
+    </tr>
+    <tr>
+    <td>:visited</td>
+    <td>Selecciona los enlaces visitados</td>
+    </tr>
+    </tbody>
+    </table>
+    <p>Estos pseudo-selectores son útiles para aplicar estilos a elementos específicos en función de su estado o posición en la estructura del documento HTML. Se utilizan añadiendo el selector a la regla de estilo, por ejemplo:</p>
+    <div class="bg-black rounded-md mb-4">
+    <div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans justify-between rounded-t-md">css<button class="flex ml-auto gap-2">Copy code</button></div>
+    <div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-css"><span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> { <span class="hljs-attribute">color</span>: red; } <span class="hljs-selector-tag">input</span><span class="hljs-selector-pseudo">:disabled</span> { <span class="hljs-attribute">opacity</span>: <span class="hljs-number">0.5</span>; } </code></div>
+    </div>
+    <p>En este ejemplo, el primer selector aplica un estilo de color rojo al enlace cuando el cursor se sitúa sobre él, mientras que el segundo selector reduce la opacidad de los elementos de entrada desactivados.</p>

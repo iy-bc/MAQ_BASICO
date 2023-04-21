@@ -1,0 +1,30 @@
+<p>La estructura básica de un documento HTML5 es esencial para cualquier página web. Aquí te presento los elementos que la conforman:</p>
+<ol>
+<li>
+<p>DTD (Document Type Definition): Este elemento se ubica en la primera línea del documento HTML5 y especifica la versión del HTML que se está utilizando. En HTML5, se utiliza la siguiente declaración: <code>&lt;!DOCTYPE html&gt;</code>.</p>
+</li>
+<li>
+<p>Elemento HTML: Es el elemento raíz del documento HTML5 y es el contenedor principal para todo el contenido de la página. Se indica mediante las etiquetas de apertura <code>&lt;html&gt;</code> y de cierre <code>&lt;/html&gt;</code>.</p>
+</li>
+<li>
+<p>Elemento head: El elemento head contiene información meta sobre el documento, como el título de la página (que aparece en la pestaña del navegador), las etiquetas meta para SEO y las referencias a archivos CSS y JavaScript. Se indica mediante las etiquetas de apertura <code>&lt;head&gt;</code> y de cierre <code>&lt;/head&gt;</code>.</p>
+</li>
+<li>
+<p>Elemento body: El elemento body es el contenedor de todo el contenido visible de la página, como texto, imágenes y elementos multimedia. Se indica mediante las etiquetas de apertura <code>&lt;body&gt;</code> y de cierre <code>&lt;/body&gt;</code>.</p>
+</li>
+</ol>
+<p>Aquí un ejemplo de estructura básica de un documento HTML5:</p>
+<pre>&lt;!DOCTYPE html&gt;<br />&lt;html&gt;<br /> &lt;head&gt;<br /> &lt;title&gt;Título de la página&lt;/title&gt;<br /> &lt;meta charset="UTF-8"&gt;<br /> &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br /> &lt;link rel="stylesheet" href="styles.css"&gt;<br /> &lt;script src="script.js"&gt;&lt;/script&gt;<br /> &lt;/head&gt;<br /> &lt;body&gt;<br /> &lt;h1&gt;Encabezado de nivel 1&lt;/h1&gt;<br /> &lt;p&gt;Este es un párrafo de ejemplo.&lt;/p&gt;<br /> &lt;img src="imagen.jpg" alt="Descripción de la imagen"&gt;<br /> &lt;/body&gt;<br />&lt;/html&gt;</pre>
+<p>Es importante notar que todos los elementos mencionados deben estar presentes en un documento HTML5 válido. A partir de aquí, se pueden agregar más elementos para crear una página web más completa y compleja. </p>
+<p>Debe contener como mínimo una estructura básica: un elemento DOCTYPE que identifique que es un sitio HTML, una etiqueta HEAD que incluya la codificación de la página, como sería la &lt;meta charset="UTF-8"&gt;y una etiqueta de BODY. Dentro de la mísma es donde agregaremos los elementos que conformen la web.</p>
+
+
+<form class="test" data-falla="Todas las etiquetas que sean META van dentro de la etiqueta HEAD">
+    <p>¿Dónde va la etiqueta de &lt;meta charset='utf-8'&gt;?</p>
+    <input type="radio" name="respuesta" >Dentro de !DOCTYPE<br>
+    <input type="radio" name="respuesta" >Dentro de BODY<br>
+    <input type="radio" name="respuesta" ok>Dentro de HEAD<br>
+    <input type="radio" name="respuesta" >Dentro de H1<br>
+    <br>
+    <button type="button" onclick="comprobar()">Comprobar</button>
+</form>

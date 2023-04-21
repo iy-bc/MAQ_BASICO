@@ -1,0 +1,192 @@
+
+<p>El box model <strong>es un concepto fundamental en CSS que se refiere a cómo se calcula el tamaño total de un elemento</strong> HTML. Cada elemento HTML se representa como un rectángulo en la página, y el box model define cómo se calcula el ancho y alto total de ese rectángulo.</p>
+<p>El box model consta de cuatro partes principales: el contenido, el padding, el borde y el margen. Cada una de estas partes afecta al tamaño total del elemento:</p>
+<ul>
+<li>Contenido: es el área que contiene el contenido real del elemento, como el texto, las imágenes o los vídeos.</li>
+<li>Padding: es un espacio transparente que rodea el contenido y se encuentra entre el contenido y el borde. El padding se puede ajustar para aumentar o disminuir la distancia entre el contenido y el borde.</li>
+<li>Borde: es una línea sólida o discontinua que rodea el padding y el contenido del elemento. El borde se puede ajustar en términos de tamaño, estilo y color.</li>
+<li>Margen: es un espacio transparente que se encuentra fuera del borde y que separa el elemento de otros elementos de la página. El margen se puede ajustar para aumentar o disminuir la distancia entre el elemento y otros elementos de la página.</li>
+</ul>
+<p>Para controlar el diseño y tamaño de los elementos HTML5, se pueden utilizar las propiedades de CSS relacionadas con el box model:</p>
+<ul>
+<li>width: define el ancho del contenido del elemento.</li>
+<li>height: define la altura del contenido del elemento.</li>
+<li>padding: define la cantidad de espacio entre el contenido y el borde.</li>
+<li>border: define el tamaño, estilo y color del borde del elemento.</li>
+<li>margin: define la cantidad de espacio entre el borde del elemento y otros elementos de la página.</li>
+</ul>
+<p>Estas propiedades se pueden aplicar a través de selectores de etiqueta, clase o ID en un archivo CSS externo o en línea en la sección style del archivo HTML.</p>
+<p>Por ejemplo, para crear un cuadrado con un borde de 2 píxeles, un padding de 10 píxeles y un margen de 20 píxeles, se podría usar el siguiente código CSS:</p>
+<div class="bg-black rounded-md mb-4">
+<div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans justify-between rounded-t-md"> </div>
+<div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-css"><span class="hljs-selector-class">.square</span> { <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>; <span class="hljs-attribute">height</span>: <span class="hljs-number">100px</span>; <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span>; <span class="hljs-attribute">border</span>: <span class="hljs-number">2px</span> solid black; <span class="hljs-attribute">margin</span>: <span class="hljs-number">20px</span>; } </code></div>
+</div>
+<p>Este código crea un elemento con la clase "square" que tiene un ancho y una altura de 100 píxeles, un padding de 10 píxeles, un borde sólido de 2 píxeles y un margen de 20 píxeles. El tamaño total del elemento en la página sería de 144 píxeles de ancho y 144 píxeles de alto.</p>
+<h3>Modo de disposición de elementos: uso del display</h3>
+<p>La propiedad CSS "display" <strong>define cómo se muestra un elemento</strong> HTML. Los valores de "display" pueden ser: block, inline, inline-block, none, flex, grid, table, entre otros.</p>
+<p>Aquí hay una tabla con algunos de los valores de "display" más comunes y sus explicaciones:</p>
+<table>
+<thead>
+<tr>
+<th>Valor de "display"</th>
+<th>Explicación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>block</td>
+<td>El elemento es un bloque, y ocupa todo el ancho disponible en su contenedor padre, y comienza en una nueva línea.</td>
+</tr>
+<tr>
+<td>inline</td>
+<td>El elemento es una línea, y solo ocupa el ancho que necesita. No se puede establecer ancho, altura, margen superior o inferior.</td>
+</tr>
+<tr>
+<td>inline-block</td>
+<td>El elemento es una línea que también acepta ancho, altura, margen superior e inferior, y puede estar en la misma línea.</td>
+</tr>
+<tr>
+<td>none</td>
+<td>El elemento no se muestra.</td>
+</tr>
+<tr>
+<td>flex</td>
+<td>El elemento se comporta como un contenedor flexible.</td>
+</tr>
+<tr>
+<td>grid</td>
+<td>El elemento se comporta como un contenedor de cuadrícula.</td>
+</tr>
+<tr>
+<td>table</td>
+<td>El elemento se comporta como una tabla.</td>
+</tr>
+<tr>
+<td>list-item</td>
+<td>El elemento se comporta como un elemento de lista.</td>
+</tr>
+</tbody>
+</table>
+<p>La propiedad "display" es una herramienta poderosa para controlar el diseño y la estructura de una página web, y su correcto uso puede mejorar significativamente la legibilidad y la usabilidad del sitio.</p>
+
+<p> </p>
+<h3>Flexbox</h3>
+<p>Flexbox es una técnica de diseño que permite controlar la disposición y el tamaño de los elementos en un contenedor flexible. Los elementos flexibles se pueden organizar en una sola fila o en una sola columna, o pueden envolverse en múltiples filas o columnas según sea necesario.</p>
+<p>La propiedad principal de flexbox es <code>display: flex</code>, que se aplica al contenedor que se va a convertir en un contenedor flexible.</p>
+<p>A continuación, se muestra una tabla de las propiedades principales de flexbox y sus ejemplos de uso:</p>
+<table>
+<thead>
+<tr>
+<th>Explicación/Lo que se consigue</th>
+<th>Propiedad</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Indica que el contenedor es un contenedor flexible</td>
+<td>display</td>
+<td><code>display: flex;</code></td>
+</tr>
+<tr>
+<td>Define cómo se distribuyen los elementos a lo largo del eje principal (eje de fila por defecto)</td>
+<td>justify-content</td>
+<td><code>justify-content: center;</code></td>
+</tr>
+<tr>
+<td>Define cómo se distribuyen los elementos a lo largo del eje secundario (eje de columna por defecto)</td>
+<td>align-items</td>
+<td><code>align-items: center;</code></td>
+</tr>
+<tr>
+<td>Define cómo se distribuyen los elementos en un eje secundario adicional cuando hay más de una fila o columna</td>
+<td>align-content</td>
+<td><code>align-content: space-between;</code></td>
+</tr>
+<tr>
+<td>Define cómo se organizan los elementos dentro del contenedor flexible</td>
+<td>flex-direction</td>
+<td><code>flex-direction: row;</code></td>
+</tr>
+<tr>
+<td>Define cómo se ajustan los elementos en el contenedor flexible cuando hay espacio adicional disponible</td>
+<td>flex-wrap</td>
+<td><code>flex-wrap: wrap;</code></td>
+</tr>
+<tr>
+<td>Define cómo se ajusta el tamaño de los elementos flexibles dentro del contenedor flexible</td>
+<td>flex</td>
+<td><code>flex: 1;</code></td>
+</tr>
+<tr>
+<td>Define el tamaño mínimo, preferido y máximo del elemento flexible</td>
+<td>flex-basis</td>
+<td><code>flex-basis: 300px;</code></td>
+</tr>
+<tr>
+<td>Define el orden en el que se deben mostrar los elementos dentro del contenedor flexible</td>
+<td>order</td>
+<td><code>order: 2;</code></td>
+</tr>
+</tbody>
+</table>
+<p>Con flexbox, se pueden lograr varios diseños complejos y dinámicos de manera fácil y eficiente.</p>
+
+<h3>Ejemplos de flexbox</h3>
+
+<p>Aquí te dejo algunos ejemplos de flexbox:</p>
+<ol>
+<li>Ejemplo de disposición horizontal de elementos en línea utilizando flexbox:</li>
+</ol>
+<div>
+<div> </div>
+<div><code><span>&lt;<span>div</span> <span>class</span>=<span>"container"</span>&gt;</span> <span>&lt;<span>div</span> <span>class</span>=<span>"item"</span>&gt;</span>Elemento 1<span>&lt;/<span>div</span>&gt;</span> <span>&lt;<span>div</span> <span>class</span>=<span>"item"</span>&gt;</span>Elemento 2<span>&lt;/<span>div</span>&gt;</span> <span>&lt;<span>div</span> <span>class</span>=<span>"item"</span>&gt;</span>Elemento 3<span>&lt;/<span>div</span>&gt;</span> <span>&lt;/<span>div</span>&gt;</span> </code></div>
+</div>
+<div>
+<div> </div>
+<div><code><span>.container</span> { <span>display</span>: flex; } <span>.item</span> { <span>margin</span>: <span>10px</span>; <span>padding</span>: <span>10px</span>; <span>background-color</span>: <span>#ddd</span>; } </code></div>
+</div>
+<ol>
+<li>Ejemplo de disposición vertical de elementos utilizando flexbox:</li>
+</ol>
+<div>
+<div> </div>
+<div><code><span>&lt;<span>div</span> <span>class</span>=<span>"container"</span>&gt;</span> <span>&lt;<span>div</span> <span>class</span>=<span>"item"</span>&gt;</span>Elemento 1<span>&lt;/<span>div</span>&gt;</span> <span>&lt;<span>div</span> <span>class</span>=<span>"item"</span>&gt;</span>Elemento 2<span>&lt;/<span>div</span>&gt;</span> <span>&lt;<span>div</span> <span>class</span>=<span>"item"</span>&gt;</span>Elemento 3<span>&lt;/<span>div</span>&gt;</span> <span>&lt;/<span>div</span>&gt;</span> </code></div>
+</div>
+<div>
+<div> </div>
+<div><code><span>.container</span> { <span>display</span>: flex; <span>flex-direction</span>: column; } <span>.item</span> { <span>margin</span>: <span>10px</span>; <span>padding</span>: <span>10px</span>; <span>background-color</span>: <span>#ddd</span>; } </code></div>
+</div>
+<ol>
+<li>Ejemplo de centrado de elementos en el centro utilizando flexbox:</li>
+</ol>
+<div>
+<div> </div>
+<div><code><span>&lt;<span>div</span> <span>class</span>=<span>"container"</span>&gt;</span> <span>&lt;<span>div</span> <span>class</span>=<span>"item"</span>&gt;</span>Elemento 1<span>&lt;/<span>div</span>&gt;</span> <span>&lt;<span>div</span> <span>class</span>=<span>"item"</span>&gt;</span>Elemento 2<span>&lt;/<span>div</span>&gt;</span> <span>&lt;<span>div</span> <span>class</span>=<span>"item"</span>&gt;</span>Elemento 3<span>&lt;/<span>div</span>&gt;</span> <span>&lt;/<span>div</span>&gt;</span> </code></div>
+</div>
+<div>
+<div> </div>
+<div><code><span>.container</span> { <span>display</span>: flex; <span>justify-content</span>: center; <span>align-items</span>: center; } <span>.item</span> { <span>margin</span>: <span>10px</span>; <span>padding</span>: <span>10px</span>; <span>background-color</span>: <span>#ddd</span>; } </code></div>
+</div>
+<ol>
+<li>Ejemplo de distribución de elementos en espacios iguales utilizando flexbox:</li>
+</ol>
+<div>
+<div> </div>
+<div><code><span>&lt;<span>div</span> <span>class</span>=<span>"container"</span>&gt;</span> <span>&lt;<span>div</span> <span>class</span>=<span>"item"</span>&gt;</span>Elemento 1<span>&lt;/<span>div</span>&gt;</span> <span>&lt;<span>div</span> <span>class</span>=<span>"item"</span>&gt;</span>Elemento 2<span>&lt;/<span>div</span>&gt;</span> <span>&lt;<span>div</span> <span>class</span>=<span>"item"</span>&gt;</span>Elemento 3<span>&lt;/<span>div</span>&gt;</span> <span>&lt;/<span>div</span>&gt;</span> </code></div>
+</div>
+<div>
+<div> </div>
+<div><code><span>.container</span> { <span>display</span>: flex; <span>justify-content</span>: space-between; } <span>.item</span> { <span>margin</span>: <span>10px</span>; <span>padding</span>: <span>10px</span>; <span>background-color</span>: <span>#ddd</span>; } </code></div>
+</div>
+<ol>
+<li>Ejemplo de cambio de orden de elementos utilizando flexbox:</li>
+</ol>
+<div>
+<div> </div>
+<div><code><span>&lt;<span>div</span> <span>class</span>=<span>"container"</span>&gt;</span> <span>&lt;<span>div</span> <span>class</span>=<span>"item item-1"</span>&gt;</span>Elemento 1<span>&lt;/<span>div</span>&gt;</span> <span>&lt;<span>div</span> <span>class</span>=<span>"item item-2"</span>&gt;</span>Elemento 2<span>&lt;/<span>div</span>&gt;</span> <span>&lt;<span>div</span> <span>class</span>=<span>"item item-3"</span>&gt;</span>Elemento 3<span>&lt;/<span>div</span>&gt;</span> <span>&lt;/<span>div</span>&gt;</span> </code></div>
+</div>
+<div>
+<div> </div>
+<div><code><span>.container</span> { <span>display</span>: flex; } <span>.item-1</span> { <span>order</span>: <span>3</span>; } <span>.item-2</span> { <span>order</span>: <span>2</span>; } <span>.item-3</span> { <span>order</span>: <span>1</span>; } <span>.item</span> { <span>margin</span>: <span>10px</span>; <span>padding</span>: <span>10px</span>; <span>background-color</span>: <span>#ddd</span>; }</code></div>
+</div>

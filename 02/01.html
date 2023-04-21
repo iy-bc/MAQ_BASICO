@@ -1,0 +1,46 @@
+<p>CSS (Cascading Style Sheets) es un lenguaje de diseño utilizado para aplicar estilos y dar formato a los elementos HTML en una página web. La sintaxis básica de CSS incluye dos partes principales: un selector y un bloque de declaración. El selector indica a qué elementos HTML se aplicará el estilo, mientras que el bloque de declaración contiene una o más propiedades CSS y sus valores asociados.</p>
+
+<p>CSS se introdujo por primera vez en 1996 como una solución para separar la presentación del contenido en documentos web. Desde entonces, ha pasado por varias versiones importantes, cada una con nuevas características y mejoras:</p>
+<ul>
+<li>CSS1: se publicó en 1996 y definió las especificaciones básicas de CSS, incluyendo la sintaxis de las reglas CSS y las propiedades de estilo.</li>
+<li>CSS2: se publicó en 1998 y amplió la especificación para incluir soporte para hojas de estilo externas, mejoras en la capacidad de diseño de la página y nuevas propiedades de estilo.</li>
+<li>CSS2.1: se publicó en 2004 y corrigió errores y ambigüedades en CSS2.</li>
+<li>CSS3: es la versión actual de CSS y se compone de varios módulos que se están desarrollando de forma independiente, como Selectores, Texto, Fondos y bordes, Efectos y animaciones, Transformaciones y Diseño de la página. Cada módulo se desarrolla por separado y se publica cuando está listo, lo que permite a los desarrolladores utilizar las características de CSS3 en función de sus necesidades.</li>
+</ul>
+<h3>Formas de implentación de CSS</h3>
+<p>Hay tres formas de aplicar estilos CSS a una página web:</p>
+<ol>
+<li>Estilos en línea: se pueden aplicar estilos CSS directamente en un elemento HTML utilizando el atributo <code>style</code>. Por ejemplo:</li>
+</ol>
+<div>
+<div> </div>
+<div><code>&lt;<span>h1</span> style="<span>color</span>: red; <span>font-size</span>: <span>24px</span>;"&gt;Título de la <span>p</span>ágina&lt;/<span>h1</span>&gt; </code></div>
+</div>
+<p>En este ejemplo, se está aplicando un estilo en línea al elemento <code>h1</code>, estableciendo el color del texto en rojo y el tamaño de fuente en 24 píxeles.</p>
+<ol>
+<li>Estilos en la sección head: se pueden aplicar estilos CSS en la sección head de una página HTML utilizando la etiqueta <code>style</code>. Por ejemplo:</li>
+</ol>
+<div>
+<div> </div>
+<div><code><span><span>&lt;<span>head</span>&gt;</span> <span>&lt;<span>style</span>&gt;</span><span> <span>h1</span> { <span>color</span>: red; <span>font-size</span>: <span>24px</span>; } </span><span>&lt;/<span>style</span>&gt;</span> <span>&lt;/<span>head</span>&gt;</span> </span></code></div>
+</div>
+<p>En este ejemplo, se está aplicando un estilo al elemento <code>h1</code> de la página, estableciendo el color del texto en rojo y el tamaño de fuente en 24 píxeles.</p>
+<ol>
+<li>Estilos en un archivo externo: se pueden aplicar estilos CSS en un archivo externo y luego vincular ese archivo a una página HTML utilizando la etiqueta <code>link</code>. Por ejemplo:</li>
+</ol>
+<div>
+<div> </div>
+<div><code>&lt;<span>head</span>&gt; &lt;<span>link</span> rel=<span>"stylesheet"</span> <span>type</span>=<span>"text/css"</span> href=<span>"estilos.css"</span>&gt; &lt;/head&gt; </code></div>
+</div>
+<p>En este ejemplo, se está vinculando un archivo externo llamado <code>estilos.css</code> que contiene estilos CSS para la página web.</p>
+<p>Aquí hay un ejemplo completo de un archivo HTML que utiliza estilos CSS:</p>
+<div>
+<div> </div>
+<div><code><span><span>&lt;!DOCTYPE <span>html</span>&gt;</span> <span>&lt;<span>html</span>&gt;</span> <span>&lt;<span>head</span>&gt;</span> <span>&lt;<span>link</span> <span>rel</span>=<span>"stylesheet"</span> <span>type</span>=<span>"text/css"</span> <span>href</span>=<span>"estilos.css"</span>&gt;</span> <span>&lt;/<span>head</span>&gt;</span> <span>&lt;<span>body</span>&gt;</span> <span>&lt;<span>h1</span>&gt;</span>Título de la página<span>&lt;/<span>h1</span>&gt;</span> <span>&lt;<span>p</span>&gt;</span>Este es un párrafo de ejemplo.<span>&lt;/<span>p</span>&gt;</span> <span>&lt;<span>ul</span>&gt;</span> <span>&lt;<span>li</span>&gt;</span>Elemento de lista 1<span>&lt;/<span>li</span>&gt;</span> <span>&lt;<span>li</span>&gt;</span>Elemento de lista 2<span>&lt;/<span>li</span>&gt;</span> <span>&lt;<span>li</span>&gt;</span>Elemento de lista 3<span>&lt;/<span>li</span>&gt;</span> <span>&lt;/<span>ul</span>&gt;</span> <span>&lt;/<span>body</span>&gt;</span> <span>&lt;/<span>html</span>&gt;</span> </span></code></div>
+</div>
+<p>Y aquí está el contenido del archivo <code>estilos.css</code> vinculado en el ejemplo anterior:</p>
+<div>
+<div> </div>
+<div><code><span>h1</span> { <span>color</span>: red; <span>font-size</span>: <span>24px</span>; } <span>p</span> { <span>color</span>: blue; <span>font-size</span>: <span>18px</span>; } <span>ul</span> { <span>list-style-type</span>: circle; } </code></div>
+</div>
+<p>En este ejemplo, se están aplicando estilos a los elementos <code>h1</code>, <code>p</code> y <code>ul</code> de la página, estableciendo el color y el tamaño de fuente del texto, así como el tipo de viñeta utilizado en la lista.</p>
