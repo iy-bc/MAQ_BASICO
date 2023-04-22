@@ -1,0 +1,227 @@
+
+<p>JavaScript es un lenguaje de programación que se utiliza para crear sitios web interactivos y aplicaciones web. Fue creado en 1995 por Brendan Eich mientras trabajaba en Netscape Communications Corporation.</p>
+<p>Algunos conceptos básicos de programación que se aplican a JavaScript son:</p>
+<ul>
+<li>Variables: Las variables son contenedores para almacenar valores. En JavaScript, se pueden declarar variables usando la palabra clave "var", "let" o "const". Por ejemplo:</li>
+</ul>
+<div>
+<div> </div>
+<div><code><span>var</span> x = <span>5</span>;</code></div>
+<div><code><span>let</span> y = <span>"Hola"</span>; </code></div>
+<div><code><span>const</span> z = <span>true</span>; </code></div>
+</div>
+<ul>
+<li>Operadores: Los operadores son símbolos o palabras reservadas que se utilizan para realizar operaciones. Algunos operadores comunes en JavaScript son el operador de asignación "=", el operador aritmético "+", el operador de comparación "==" y el operador lógico "&amp;&amp;". Por ejemplo:</li>
+</ul>
+<div>
+<div> </div>
+<div><code><span>var</span> a = <span>5</span> + <span>3</span>; <span>// a será igual a 8</span> </code></div>
+<div><code><span>var</span> b = <span>"Hola"</span> + <span>" Mundo"</span>; <span>// </span></code><code><span>b será igual a "Hola Mundo"</span></code></div>
+<div><code><span>var</span> c = (<span>5</span> == <span>5</span>) &amp;&amp; (<span>3</span> &lt; <span>5</span>); <span>// c será igual a true</span> </code></div>
+<div> </div>
+<div>
+<table>
+<thead>
+<tr>
+<th>Operador</th>
+<th>Descripción</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>=</td>
+<td>Asignación</td>
+<td><code>let x = 5;</code></td>
+</tr>
+<tr>
+<td>+</td>
+<td>Suma</td>
+<td><code>let x = 2 + 3;</code></td>
+</tr>
+<tr>
+<td>-</td>
+<td>Resta</td>
+<td><code>let x = 5 - 2;</code></td>
+</tr>
+<tr>
+<td>*</td>
+<td>Multiplicación</td>
+<td><code>let x = 2 * 3;</code></td>
+</tr>
+<tr>
+<td>/</td>
+<td>División</td>
+<td><code>let x = 6 / 2;</code></td>
+</tr>
+<tr>
+<td>%</td>
+<td>Resto</td>
+<td><code>let x = 5 % 2;</code></td>
+</tr>
+<tr>
+<td>++</td>
+<td>Incremento</td>
+<td><code>let x = 5; x++;</code></td>
+</tr>
+<tr>
+<td>--</td>
+<td>Decremento</td>
+<td><code>let x = 5; x--;</code></td>
+</tr>
+<tr>
+<td>==</td>
+<td>Igualdad (comparación de valores)</td>
+<td><code>if (x == 5)</code></td>
+</tr>
+<tr>
+<td>===</td>
+<td>Igualdad estricta (comparación de valores y tipos de datos)</td>
+<td><code>if (x === "5")</code></td>
+</tr>
+<tr>
+<td>!=</td>
+<td>Desigualdad (comparación de valores)</td>
+<td><code>if (x != 5)</code></td>
+</tr>
+<tr>
+<td>!==</td>
+<td>Desigualdad estricta (comparación de valores y tipos de datos)</td>
+<td><code>if (x !== "5")</code></td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>Mayor que (comparación de valores)</td>
+<td><code>if (x &gt; 3)</code></td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>Menor que (comparación de valores)</td>
+<td><code>if (x &lt; 8)</code></td>
+</tr>
+<tr>
+<td>&gt;=</td>
+<td>Mayor o igual que (comparación de valores)</td>
+<td><code>if (x &gt;= 5)</code></td>
+</tr>
+<tr>
+<td>&lt;=</td>
+<td>Menor o igual que (comparación de valores)</td>
+<td><code>if (x &lt;= 5)</code></td>
+</tr>
+<tr>
+<td>&amp;&amp;</td>
+<td>Operador lógico AND (y)</td>
+<td><code>if (x &gt; 3 &amp;&amp; x &lt; 8)</code></td>
+</tr>
+<tr>
+<td>||</td>
+<td>Operador lógico OR (o)</td>
+<td>`if (x == 3</td>
+</tr>
+<tr>
+<td>!</td>
+<td>Operador lógico NOT (negación)</td>
+<td><code>if (!(x == 5))</code></td>
+</tr>
+<tr>
+<td><code>??</code></td>
+<td>El operador de fusión en nulo devuelve el primer operando si no es <code>null</code> o <code>undefined</code>, de lo contrario devuelve el segundo operando.</td>
+<td><code>let x = null; let y = x ?? "default"; // y será "default"</code></td>
+</tr>
+<tr>
+<td><code>?.</code></td>
+<td>El operador de encadenamiento opcional permite acceder a las propiedades de un objeto si el objeto no es <code>null</code> o <code>undefined</code>. Si el objeto es <code>null</code> o <code>undefined</code>, devuelve <code>undefined</code> en lugar de generar un error.</td>
+<td><code>let user = { name: "John", address: { street: "123 Main St." } }; let streetName = user?.address?.street; // streetName será "123 Main St."</code></td>
+</tr>
+<tr>
+<td><code>**</code></td>
+<td>El operador de exponenciación eleva el primer operando a la potencia del segundo operando.</td>
+<td><code>let result = 2 ** 3; // result será 8</code></td>
+</tr>
+<tr>
+<td><code>~</code></td>
+<td>El operador de negación a nivel de bits invierte cada bit en la representación binaria de un número y lo convierte de nuevo a decimal.</td>
+<td><code>let x = 5; let result = ~x; // result será -6</code></td>
+</tr>
+<tr>
+<td><code>_</code></td>
+<td>El guión bajo puede usarse como separador de dígitos en números para mejorar la legibilidad.</td>
+<td><code>let million = 1_000_000; // million será 1000000</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<ul>
+<li>Condicionales: Los condicionales se utilizan para tomar decisiones basadas en una condición. En JavaScript, se pueden utilizar los condicionales "if", "else if" y "else". Por ejemplo:</li>
+</ul>
+<div>
+<div> </div>
+<div><code><span>var</span> edad = <span>18</span>; </code></div>
+<div><code><span>if</span> (edad &gt;= <span>18</span>) </code></div>
+<div><code>{ <span>console</span>.<span>log</span>(<span>"Eres mayor de edad"</span>); </code></div>
+<div><code>} <span>else</span> { </code></div>
+<div><code> <span>console</span>.<span>log</span>(<span>"Eres menor de edad"</span>);</code></div>
+<div><code>} </code></div>
+</div>
+<p>En este ejemplo, si la variable "edad" es mayor o igual a 18, se imprimirá en la consola el mensaje "Eres mayor de edad", de lo contrario, se imprimirá el mensaje "Eres menor de edad".</p>
+<p>Estos son solo algunos conceptos básicos de programación que se aplican a JavaScript. Hay muchos otros conceptos y elementos de lenguaje que se pueden utilizar para crear aplicaciones más complejas.</p>
+<h3>Estructuras de control</h3>
+<table>
+<thead>
+<tr>
+<th>Estructura de control</th>
+<th>Sintaxis</th>
+<th>Explicación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>if</code></td>
+<td><code>if (condición) { // código si la condición es verdadera }</code></td>
+<td>Evalúa una condición y ejecuta el código dentro del bloque de llaves si es verdadera.</td>
+</tr>
+<tr>
+<td><code>if...else</code></td>
+<td><code>if (condición) { // código si la condición es verdadera } else { // código si la condición es falsa }</code></td>
+<td>Evalúa una condición y ejecuta el primer bloque de código si es verdadera y el segundo bloque si es falsa.</td>
+</tr>
+<tr>
+<td><code>if...else if...else</code></td>
+<td><code>if (condición1) { // código si la condición 1 es verdadera } else if (condición2) { // código si la condición 2 es verdadera } else { // código si todas las condiciones son falsas }</code></td>
+<td>Evalúa varias condiciones en orden y ejecuta el bloque de código correspondiente al primer resultado verdadero. Si ninguna condición es verdadera, se ejecuta el bloque de código final.</td>
+</tr>
+<tr>
+<td><code>switch</code></td>
+<td><code>switch (expresión) { case valor1: // código si la expresión coincide con valor1 break; case valor2: // código si la expresión coincide con valor2 break; default: // código si la expresión no coincide con ningún valor }</code></td>
+<td>Evalúa una expresión y ejecuta el bloque de código correspondiente al primer caso que coincida. Si no hay coincidencias, se ejecuta el bloque de código "default". El <code>break</code> es necesario para evitar que se ejecuten todos los casos posteriores.</td>
+</tr>
+<tr>
+<td><code>for</code></td>
+<td><code>for (inicialización; condición; actualización) { // código a repetir }</code></td>
+<td>Crea un bucle que se ejecuta mientras la condición es verdadera. La inicialización se ejecuta una vez antes del bucle, la actualización se ejecuta después de cada iteración.</td>
+</tr>
+<tr>
+<td><code>while</code></td>
+<td><code>while (condición) { // código a repetir }</code></td>
+<td>Crea un bucle que se ejecuta mientras la condición es verdadera.</td>
+</tr>
+<tr>
+<td><code>do...while</code></td>
+<td><code>do { // código a repetir } while (condición);</code></td>
+<td>Crea un bucle que se ejecuta al menos una vez y luego mientras la condición es verdadera.</td>
+</tr>
+<tr>
+<td><code>for...in</code></td>
+<td><code>for (variable in objeto) { // código a repetir }</code></td>
+<td>Itera sobre todas las propiedades enumerables de un objeto. La variable toma el valor de cada propiedad en cada iteración.</td>
+</tr>
+<tr>
+<td><code>for...of</code></td>
+<td><code>for (variable of iterable) { // código a repetir }</code></td>
+<td>Itera sobre cada elemento de un objeto iterable, como un array. La variable toma el valor de cada elemento en cada iteración.</td>
+</tr>
+</tbody>
+</table>
+<p> </p>

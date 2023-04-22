@@ -1,0 +1,39 @@
+
+<p>La manipulación del contenido HTML5 con JavaScript se refiere a la posibilidad de cambiar, agregar o eliminar elementos del documento HTML5 utilizando código JavaScript. A continuación, se detallan algunas de las formas más comunes de manipulación del contenido HTML5 con JavaScript:</p>
+<ol>
+<li>Cambio de contenido: Se puede cambiar el contenido de un elemento HTML utilizando el método <code>innerHTML</code>. Por ejemplo, para cambiar el contenido de un elemento con <code>id="mi-elemento"</code> se puede hacer lo siguiente:</li>
+</ol>
+<div>
+<div> </div>
+<div><code>document.getElementById("mi-elemento").innerHTML = "Nuevo contenido"; </code></div>
+</div>
+<ol>
+<li>Cambio de clases/de estilo: Se pueden cambiar las clases o estilos de un elemento HTML utilizando el método <code>classList</code> o <code>style</code>. Por ejemplo, para agregar una nueva clase a un elemento con <code>id="mi-elemento"</code> se puede hacer lo siguiente:</li>
+</ol>
+<div>
+<div> </div>
+<div><code>document.getElementById("mi-elemento").classList.add("nueva-clase"); </code></div>
+</div>
+<p>Para cambiar el estilo de un elemento, se puede acceder a la propiedad <code>style</code> del elemento y modificar las propiedades CSS deseadas. Por ejemplo, para cambiar el color de fondo de un elemento con <code>id="mi-elemento"</code> se puede hacer lo siguiente:</p>
+<div>
+<div> </div>
+<div><code>document.getElementById("mi-elemento").style.backgroundColor = "red"; </code></div>
+</div>
+<ol>
+<li>Otros cambios: Además de los cambios de contenido y de estilo, también es posible agregar o eliminar elementos del documento HTML5 utilizando los métodos <code>appendChild</code> y <code>removeChild</code>. Por ejemplo, para agregar un nuevo elemento <code>p</code> al final de un elemento con <code>id="mi-elemento"</code> se puede hacer lo siguiente:</li>
+</ol>
+<div>
+<div> </div>
+<div><code>var nuevoElemento = document.createElement("p"); nuevoElemento.innerHTML = "Nuevo elemento"; document.getElementById("mi-elemento").appendChild(nuevoElemento); </code></div>
+</div>
+<p>En resumen, la manipulación del contenido HTML5 con JavaScript es una poderosa herramienta que permite hacer cambios dinámicos en el documento en tiempo real, lo que puede mejorar la experiencia de usuario y la interactividad de la página web.</p>
+
+<h3>Otras formas de manipulación</h3>
+
+<p>Además de la manipulación del contenido HTML5 que se mencionó anteriormente, hay otras formas de manipulación que se pueden hacer con JavaScript:</p>
+<p>1. Manipulación de atributos: se puede cambiar el valor de los atributos de los elementos HTML5 utilizando JavaScript. Por ejemplo, se puede cambiar el valor del atributo "src" de una etiqueta "img".</p>
+<p>2. Creación de elementos HTML5: se pueden crear nuevos elementos HTML5 con JavaScript y agregarlos al documento. Por ejemplo, se puede crear un nuevo elemento "div" y agregarlo al final de un elemento existente.</p>
+<p>3. Eliminación de elementos HTML5: se pueden eliminar elementos HTML5 del documento utilizando JavaScript. Por ejemplo, se puede eliminar una etiqueta "p" que ya no sea necesaria.</p>
+<p>4. Eventos: se pueden agregar eventos a los elementos HTML5 para que se dispare una función JavaScript cuando se realice una acción. Por ejemplo, se puede agregar un evento "click" a un botón para que se ejecute una función cuando se hace clic en el botón.</p>
+<p>5. Animaciones: con JavaScript se pueden crear animaciones en los elementos HTML5. Por ejemplo, se puede hacer que un elemento se desplace suavemente por la pantalla con una animación.</p>
+<p>Estas son solo algunas de las formas en que se puede manipular el contenido HTML5 con JavaScript. Hay muchas otras posibilidades dependiendo de las necesidades específicas de cada proyecto.</p>

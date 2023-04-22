@@ -1,0 +1,23 @@
+<p>Los eventos son acciones o sucesos que ocurren en la página web, como por ejemplo hacer clic en un botón, mover el mouse sobre un elemento, o enviar un formulario. Los eventos permiten que el usuario interactúe con la página web y que ésta responda a las acciones del usuario.</p>
+<p>JavaScript proporciona una manera de manejar eventos en la página web mediante funciones que se ejecutan cuando ocurre un evento específico. Algunos de los eventos más comunes son:</p>
+<ul>
+<li>click: se activa cuando el usuario hace clic en un elemento.</li>
+<li>hover: se activa cuando el usuario pasa el ratón por encima de un elemento.</li>
+<li>submit: se activa cuando se envía un formulario.</li>
+<li>keyup: se activa cuando el usuario suelta una tecla después de presionarla.</li>
+<li>load: se activa cuando la página web se ha cargado completamente.</li>
+<li>resize: se activa cuando el usuario cambia el tamaño de la ventana del navegador.</li>
+</ul>
+<p>Para agregar un evento a un elemento HTML, se utiliza la propiedad "on" seguida del nombre del evento. Por ejemplo, para agregar un evento de clic a un botón, se puede usar el siguiente código:</p>
+<div>
+<div> </div>
+<div><code><span><span>&lt;<span>button</span> <span>id</span>=<span>"miBoton"</span>&gt;</span>Haz clic aquí<span>&lt;/<span>button</span>&gt;</span> <span>&lt;<span>script</span>&gt;</span><span> <span>document</span>.<span>getElementById</span>(<span>"miBoton"</span>).<span>onclick</span> = <span>function</span>() { <span>alert</span>(<span>"¡Hola mundo!"</span>); }; </span><span>&lt;/<span>script</span>&gt;</span> </span></code></div>
+</div>
+<p>En este ejemplo, se ha utilizado la función <code>getElementById</code> para seleccionar el botón con el id "miBoton", y se ha agregado un evento de clic utilizando la propiedad <code>onclick</code>. La función que se ejecutará cuando se haga clic en el botón es una función anónima que muestra una ventana de alerta con el mensaje "¡Hola mundo!".</p>
+<p>También es posible agregar eventos utilizando el método <code>addEventListener</code>, que permite agregar múltiples eventos a un elemento. Por ejemplo, para agregar eventos de clic y hover a un botón, se puede utilizar el siguiente código:</p>
+<div>
+<div> </div>
+<div><code><span><span>&lt;<span>button</span> <span>id</span>=<span>"miBoton"</span>&gt;</span>Haz clic aquí<span>&lt;/<span>button</span>&gt;</span> <span>&lt;<span>script</span>&gt;</span><span> <span>var</span> boton = <span>document</span>.<span>getElementById</span>(<span>"miBoton"</span>); boton.<span>addEventListener</span>(<span>"click"</span>, <span>function</span>() { <span>alert</span>(<span>"¡Hola mundo!"</span>); }); boton.<span>addEventListener</span>(<span>"mouseover"</span>, <span>function</span>() { boton.<span>style</span>.<span>backgroundColor</span> = <span>"red"</span>; }); boton.<span>addEventListener</span>(<span>"mouseout"</span>, <span>function</span>() { boton.<span>style</span>.<span>backgroundColor</span> = <span>""</span>; }); </span><span>&lt;/<span>script</span>&gt;</span> </span></code></div>
+</div>
+<p>En este ejemplo, se ha utilizado el método <code>addEventListener</code> para agregar tres eventos al botón: un evento de clic, un evento de pasar el ratón por encima (<code>mouseover</code>), y un evento de quitar el ratón (<code>mouseout</code>). La función que se ejecuta cuando se hace clic en el botón muestra una ventana de alerta con el mensaje "¡Hola mundo!". Las funciones que se ejecutan cuando se pasa el ratón por encima y se quita el ratón cambian el color de fondo del botón a rojo y lo restauran a su valor original, respectivamente.</p>
+

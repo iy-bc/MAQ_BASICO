@@ -1,0 +1,60 @@
+<p>El DOM (Document Object Model) es una representación de la estructura de un documento HTML o XML como un árbol de objetos, donde cada objeto representa una parte del documento, como un elemento, un atributo o un fragmento de texto. El DOM permite interactuar con la página web mediante JavaScript, permitiendo la selección, modificación y eliminación de elementos y atributos.</p>
+<p>La selección de elementos en el DOM se realiza mediante los métodos proporcionados por el objeto <code>document</code>. Los métodos más comunes son:</p>
+<ul>
+<li><code>getElementById()</code>: selecciona un elemento por su ID único.</li>
+<li><code>getElementsByClassName()</code>: selecciona todos los elementos que tienen una clase específica.</li>
+<li><code>getElementsByTagName()</code>: selecciona todos los elementos con una etiqueta HTML específica.</li>
+<li><code>querySelector()</code>: selecciona el primer elemento que coincide con un selector CSS específico.</li>
+<li><code>querySelectorAll()</code>: selecciona todos los elementos que coinciden con un selector CSS específico.</li>
+</ul>
+<p>Estos métodos devuelven un objeto que representa el elemento seleccionado, y se pueden encadenar para seleccionar elementos anidados o filtrar los resultados. Por ejemplo, para seleccionar todos los elementos <code>p</code> con la clase "ejemplo", se puede usar el siguiente código:</p>
+<div>
+<div> </div>
+<div><code><span>const</span> elementos = <span>document</span>.<span>querySelectorAll</span>(<span>"p.ejemplo"</span>); </code></div>
+</div>
+<p>Esto devuelve una lista de objetos que representan los elementos seleccionados, que se pueden recorrer y manipular mediante JavaScript.</p>
+<h3>Recorriendo el DOM</h3>
+<p>Existen varias formas de recorrer el DOM en JavaScript, algunas de ellas son:</p>
+<ol>
+<li>Recorriendo los nodos hermanos:</li>
+</ol>
+<p>Podemos recorrer los nodos hermanos de un elemento a través de las propiedades <code>previousSibling</code> y <code>nextSibling</code> para navegar hacia arriba y hacia abajo en el árbol del DOM respectivamente. Por ejemplo:</p>
+<div>
+<div> </div>
+<div><code><span>let</span> primerElemento = <span>document</span>.<span>getElementById</span>(<span>"primero"</span>); <span>let</span> siguienteElemento = primerElemento.<span>nextSibling</span>; <span>let</span> anteriorElemento = primerElemento.<span>previousSibling</span>; </code></div>
+</div>
+<ol>
+<li>Recorriendo los nodos hijos:</li>
+</ol>
+<p>Podemos recorrer los nodos hijos de un elemento a través de la propiedad <code>childNodes</code>. Por ejemplo:</p>
+<div>
+<div> </div>
+<div><code><span>let</span> padre = <span>document</span>.<span>getElementById</span>(<span>"padre"</span>); <span>let</span> hijos = padre.<span>childNodes</span>; <span>for</span> (<span>let</span> i = <span>0</span>; i &lt; hijos.<span>length</span>; i++) { <span>console</span>.<span>log</span>(hijos[i]); } </code></div>
+</div>
+<p>También podemos recorrer los nodos hijos de un elemento a través de las propiedades <code>firstChild</code> y <code>lastChild</code> para acceder al primer y último hijo respectivamente. Por ejemplo:</p>
+<div>
+<div> </div>
+<div><code><span>let</span> primerHijo = padre.<span>firstChild</span>; <span>let</span> ultimoHijo = padre.<span>lastChild</span>; </code></div>
+</div>
+<ol>
+<li>Recorriendo los nodos padres:</li>
+</ol>
+<p>Podemos recorrer los nodos padres de un elemento a través de la propiedad <code>parentNode</code>. Por ejemplo:</p>
+<div>
+<div> </div>
+<div><code><span>let</span> elementoHijo = <span>document</span>.<span>getElementById</span>(<span>"hijo"</span>); <span>let</span> elementoPadre = elementoHijo.<span>parentNode</span>; </code></div>
+</div>
+<ol>
+<li>Encontrar coincidencias:</li>
+</ol>
+<p>Podemos encontrar nodos que coinciden con ciertos criterios utilizando los métodos <code>querySelector</code> y <code>querySelectorAll</code>. <code>querySelector</code> nos devuelve el primer elemento que cumple el criterio especificado, mientras que <code>querySelectorAll</code> nos devuelve todos los elementos que cumplen el criterio especificado. Por ejemplo:</p>
+<div>
+<div> </div>
+<div><code><span>let</span> elemento = <span>document</span>.<span>querySelector</span>(<span>"#mi-elemento"</span>); <span>let</span> elementos = <span>document</span>.<span>querySelectorAll</span>(<span>".clase-elemento"</span>); </code></div>
+</div>
+<p>Además, podemos buscar elementos por su etiqueta utilizando el método <code>getElementsByTagName</code>. Por ejemplo:</p>
+<div>
+<div> </div>
+<div><code><span>let</span> elementosP = <span>document</span>.<span>getElementsByTagName</span>(<span>"p"</span>); </code></div>
+</div>
+<p>Estas son solo algunas de las formas en que podemos recorrer y seleccionar elementos en el DOM de una página web utilizando JavaScript.</p>

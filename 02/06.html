@@ -1,16 +1,67 @@
-<p>Además de las etiquetas mencionadas anteriormente, HTML5 también incluye etiquetas multimedia que permiten a los desarrolladores web integrar fácilmente elementos multimedia en sus páginas web. Algunas de estas etiquetas son:</p>
+<p>CSS (Cascading Style Sheets) es un lenguaje de estilo que se utiliza para definir la presentación y el diseño de una página web. CSS se utiliza para separar el contenido HTML de la presentación visual y permite crear diseños más complejos y sofisticados.</p>
+<h3>Resumen de propiedades</h3>
 <ul>
-<li><code>audio</code>: se utiliza para insertar archivos de audio en una página web.</li>
-<li><code>video</code>: se utiliza para insertar archivos de video en una página web.</li>
+<li>Color: Define el color del texto y del fondo.</li>
+<li>Fondo: Define el fondo de un elemento.</li>
+<li>Fuente: Define la fuente de texto que se va a utilizar.</li>
+<li>Tamaño: Define el tamaño del texto.</li>
+<li>Borde: Define el borde de un elemento.</li>
+<li>Margen: Define el espacio alrededor de un elemento.</li>
+<li>Padding: Define el espacio dentro del borde de un elemento.</li>
+<li>Display: Define el modo de visualización de un elemento.</li>
+<li>Flexbox: Define un modelo de diseño flexible y adaptable.</li>
+<li>Media queries: Permite definir diferentes estilos para diferentes dispositivos y tamaños de pantalla.</li>
 </ul>
-<p>Dentro de cada etiquta de multimeda hay estos atributos:</p>
-<ul>
-<li><code>source</code>: se utiliza dentro de las etiquetas <code>audio</code> y <code>video</code> para especificar la ubicación del archivo multimedia y el formato del archivo.</li>
-<li><code>track</code>: se utiliza dentro de la etiqueta <code>video</code> para agregar subtítulos a un video.</li>
-</ul>
-<p>Otras etiquetas dignas de mención para la maquetación básica incluyen:</p>
-<ul>
-<li><code>br</code>: se utiliza para crear saltos de línea en una página web.</li>
-<li><code>hr</code>: se utiliza para crear una línea horizontal en una página web.</li>
-<li><code>script</code>: se utiliza para vincular una un archivo de recursos de script de javascript relacionado.</li>
-</ul>
+<h3>Media queries</h3>
+<p>Las media queries son una característica de CSS que permite adaptar el diseño de una página web a diferentes dispositivos y tamaños de pantalla. Se utilizan para establecer diferentes estilos para diferentes resoluciones de pantalla, anchos y orientaciones. Por ejemplo, se pueden definir estilos específicos para pantallas pequeñas de teléfonos móviles o para pantallas grandes de ordenadores de escritorio. Las media queries se utilizan junto con CSS y se definen utilizando una sintaxis específica.</p>
+
+<h3>Ejemplo de CSS</h3>
+<p>Este es un ejemplo que reúne lo aprendido:</p>
+
+
+<code>
+    /* Estilo para todos los párrafos del documento */
+p {
+  font-size: 16px; /* Tamaño de fuente */
+  color: #333; /* Color de texto */
+  line-height: 1.5; /* Espacio entre líneas */
+}
+
+/* Estilo para el encabezado del documento */
+header {
+  background-color: #f2f2f2; /* Color de fondo */
+  padding: 20px; /* Espacio interno */
+  text-align: center; /* Alineación de texto */
+}
+
+/* Estilo para un botón específico */
+#mi-boton {
+  background-color: #007bff; /* Color de fondo */
+  color: #fff; /* Color de texto */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espacio interno */
+  border-radius: 4px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar el ratón */
+}
+
+/* Estilo para un enlace específico */
+.mi-enlace {
+  color: #007bff; /* Color de texto */
+  text-decoration: none; /* Sin subrayado */
+}
+
+/* Media Query para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+  /* Estilo para el encabezado en dispositivos móviles */
+  header {
+    font-size: 20px; /* Tamaño de fuente */
+    padding: 10px; /* Espacio interno */
+  }
+
+  /* Estilo para el botón en dispositivos móviles */
+  #mi-boton {
+    padding: 8px 16px; /* Espacio interno */
+    font-size: 14px; /* Tamaño de fuente */
+  }
+}
+</code>

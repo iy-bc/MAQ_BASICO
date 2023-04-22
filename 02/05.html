@@ -1,43 +1,47 @@
-<p>Los formularios HTML5 son elementos clave para permitir que los usuarios interactúen con un sitio web o aplicación web. Estos formularios suelen incluir campos de entrada de datos, como entradas de texto, botones de opción, casillas de verificación y botones de envío.</p>
-<p>Aquí se detallan los principales elementos que se utilizan en los formularios HTML5:</p>
+<p>Las media queries son una técnica de CSS que nos permite aplicar estilos específicos a un documento HTML según el tamaño de la pantalla o el dispositivo en el que se está visualizando. Esto es especialmente útil para adaptar el diseño y la funcionalidad de un sitio web a distintos dispositivos, como móviles, tabletas y ordenadores de escritorio.</p>
+<p>La sintaxis básica de una media query es la siguiente:</p>
+<div>
+<div> </div>
+<div><code><span>@media</span> (condición) </code></div>
+<div><code>{ </code></div>
+<div><code> <span>/* Estilos específicos para la condición */</span> </code></div>
+<div><code>} </code></div>
+</div>
+<p>La condición puede ser una expresión que evalúa el ancho, la altura, la orientación, la relación de aspecto, la densidad de píxeles o el modo de color de la pantalla. Algunos ejemplos de condiciones comunes son:</p>
 <ul>
-<li>
-<p><strong>Input</strong>: El elemento <code>input</code> es uno de los elementos más importantes en los formularios HTML5. Este elemento se utiliza para crear diferentes tipos de campos de entrada, dependiendo del valor del atributo <code>type</code>. Algunos de los tipos de entrada más comunes son:</p>
-<ul>
-<li><code>text</code>: permite ingresar texto</li>
-<li><code>password</code>: permite ingresar una contraseña</li>
-<li><code>email</code>: permite ingresar una dirección de correo electrónico</li>
-<li><code>number</code>: permite ingresar un número</li>
-<li><code>date</code>: permite ingresar una fecha</li>
-<li><code>checkbox</code>: permite seleccionar uno o varios elementos de una lista</li>
-<li><code>radio</code>: permite seleccionar una opción de una lista de opciones</li>
+<li><code>max-width</code>: establece un ancho máximo para la pantalla.</li>
+<li><code>min-width</code>: establece un ancho mínimo para la pantalla.</li>
+<li><code>orientation</code>: establece la orientación de la pantalla en modo horizontal o vertical.</li>
+<li><code>min-resolution</code>: establece una resolución mínima para la pantalla.</li>
+<li><code>max-device-width</code>: establece un ancho máximo para el dispositivo.</li>
 </ul>
-</li>
-<li>
-<p><strong>Label</strong>: El elemento <code>label</code> se utiliza para asociar un texto descriptivo con un elemento de formulario. Esto puede hacer que sea más fácil para los usuarios entender qué información se les está pidiendo. Para asociar un <code>label</code> con un <code>input</code>, se utiliza el atributo <code>for</code>.</p>
-</li>
-<li>
-<p><strong>Button</strong>: El elemento <code>button</code> se utiliza para crear botones dentro de un formulario. El atributo <code>type</code> se utiliza para especificar el tipo de botón que se desea crear. Algunos de los tipos de botón más comunes son:</p>
-<ul>
-<li><code>submit</code>: envía el formulario al servidor</li>
-<li><code>reset</code>: borra los datos del formulario</li>
-<li><code>button</code>: crea un botón normal</li>
-</ul>
-</li>
-</ul>
-<p>Además, los formularios HTML5 también incluyen los atributos <code>action</code> y <code>method</code>. El atributo <code>action</code> se utiliza para especificar la URL a la que se enviará el formulario cuando el usuario haga clic en el botón de envío. El atributo <code>method</code> se utiliza para especificar el método HTTP que se utilizará para enviar el formulario. Los valores más comunes son <code>get</code> y <code>post</code>.</p>
-<p>En resumen, los formularios HTML5 son elementos clave para permitir que los usuarios interactúen con un sitio web o aplicación web. Los elementos <code>input</code>, <code>label</code> y <code>button</code> son los elementos principales utilizados en los formularios, y el atributo <code>action</code> y <code>method</code> son importantes para especificar la acción y el método de envío del formulario.</p>
-
-
-<p>Además de los tipos de entrada de datos mencionados anteriormente, HTML5 también introduce nuevos tipos de entrada de datos que pueden ser utilizados en formularios. Algunos de estos nuevos tipos de entrada son:</p>
-<ul>
-<li><code>color</code>: permite seleccionar un color a través de una paleta de colores</li>
-<li><code>range</code>: permite seleccionar un valor dentro de un rango predefinido</li>
-<li><code>search</code>: permite ingresar un término de búsqueda</li>
-<li><code>tel</code>: permite ingresar un número de teléfono</li>
-<li><code>url</code>: permite ingresar una dirección URL</li>
-</ul>
-<p>El elemento <code>textarea</code> se utiliza para crear áreas de texto de varias líneas en un formulario. Este elemento permite a los usuarios ingresar texto de forma libre, y es útil para recopilar comentarios o información adicional de los usuarios.</p>
-<p>Otro elemento importante en los formularios es <code>fieldset</code>. Este elemento se utiliza para agrupar elementos relacionados en un formulario. Se puede usar para dividir un formulario en secciones lógicas y hacer que sea más fácil de entender para los usuarios.</p>
-<p>Además, HTML5 también introduce nuevos atributos para los elementos de formulario. Por ejemplo, el atributo <code>placeholder</code> se utiliza para proporcionar un texto de ejemplo en un campo de entrada, lo que puede ayudar a los usuarios a comprender qué tipo de información se espera. También existe el atributo <code>required</code>, que se utiliza para indicar que un campo es obligatorio y no puede dejarse en blanco.</p>
-<p>En resumen, HTML5 introduce nuevos tipos de entrada de datos y atributos para los formularios, lo que hace que sea más fácil y conveniente para los desarrolladores web crear formularios que sean fáciles de usar para los usuarios. El elemento <code>textarea</code> se utiliza para crear áreas de texto de varias líneas, mientras que <code>fieldset</code> se utiliza para agrupar elementos relacionados en un formulario.</p>
+<p>A continuación, se presentan algunos ejemplos de media queries para diferentes tamaños de pantalla:</p>
+<div>
+<div> </div>
+<div><code><span>/* Estilos para pantallas con un ancho máximo de 600 píxeles */</span> </code></div>
+<div><code><span>@media</span> (<span>max-width</span>: <span>600px</span>) </code></div>
+<div><code>{ </code></div>
+<div><code> <span>body</span> </code></div>
+<div><code>{ <span>font-size</span>: <span>16px</span>; } </code></div>
+<div><code>} </code></div>
+<div> </div>
+<div><code><span>/* Estilos para pantallas con un ancho mínimo de 800 píxeles */</span></code></div>
+<div><code><span>@media</span> (<span>min-width</span>: <span>800px</span>) { <span>body</span> { <span>font-size</span>: <span>20px</span>; } } </code></div>
+<div><code><span>/* Estilos para pantallas en modo horizontal */</span> </code></div>
+<div><code><span>@media</span> (<span>orientation</span>: landscape) </code></div>
+<div><code>{</code></div>
+<div><code> <span>body</span> </code></div>
+<div><code>{ <span>background-color</span>: blue; }</code></div>
+<div><code>} </code></div>
+</div>
+<p>También es posible combinar varias condiciones en una sola media query, por ejemplo:</p>
+<div>
+<div> </div>
+<div><code><span>/* Estilos para pantallas con un ancho máximo de 600 píxeles en modo vertical */</span> </code></div>
+<div><code><span>@media</span> (<span>max-width</span>: <span>600px</span>) <span>and</span> (<span>orientation</span>: portrait) </code></div>
+<div><code>{ </code></div>
+<div><code> <span>body</span> </code></div>
+<div><code>{ <span>font-size</span>: <span>16px</span>; } </code></div>
+<div><code>} </code></div>
+</div>
+<p>Es importante tener en cuenta que el uso de media queries no es una solución definitiva para el diseño responsive, ya que puede haber una gran variedad de tamaños y resoluciones de pantalla. Sin embargo, es una herramienta útil para proporcionar una experiencia de usuario consistente y optimizada en diferentes dispositivos.</p>
