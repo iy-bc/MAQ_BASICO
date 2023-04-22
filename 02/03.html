@@ -102,3 +102,196 @@
   </tr>
   </tbody>
   </table>
+
+  <h3>Unidades de CSS</h3>
+
+  <table>
+    <thead>
+    <tr>
+    <th>Unidad</th>
+    <th>Símbolo</th>
+    <th>Explicación</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Píxel</td>
+    <td><code>px</code></td>
+    <td>Una unidad de medida que representa un punto en la pantalla. Es una unidad absoluta y siempre tendrá el mismo tamaño independientemente del tamaño de la pantalla o del dispositivo.</td>
+    </tr>
+    <tr>
+    <td>Porcentaje</td>
+    <td><code>%</code></td>
+    <td>Una unidad de medida relativa que se basa en el tamaño del elemento padre. Por ejemplo, si un elemento tiene un ancho del 50% y su elemento padre tiene un ancho de 500 píxeles, el elemento tendrá un ancho de 250 píxeles.</td>
+    </tr>
+    <tr>
+    <td>Em</td>
+    <td><code>em</code></td>
+    <td>Una unidad de medida relativa que se basa en el tamaño de fuente del elemento padre. Por ejemplo, si un elemento tiene un tamaño de fuente de 1.5 em y su elemento padre tiene un tamaño de fuente de 16 píxeles, el tamaño de fuente del elemento será de 24 píxeles (1.5 * 16).</td>
+    </tr>
+    <tr>
+    <td>Rem</td>
+    <td><code>rem</code></td>
+    <td>Una unidad de medida relativa que se basa en el tamaño de fuente del elemento raíz del documento (normalmente el elemento <code>html</code>). A diferencia de <code>em</code>, <code>rem</code> siempre se basa en el mismo tamaño de fuente independientemente del elemento padre.</td>
+    </tr>
+    <tr>
+    <td>Viewport Width</td>
+    <td><code>vw</code></td>
+    <td>Una unidad de medida relativa que se basa en el ancho de la ventana gráfica (viewport) del dispositivo. Por ejemplo, si un elemento tiene un ancho del 50vw, tendrá un ancho igual al 50% del ancho de la ventana gráfica del dispositivo.</td>
+    </tr>
+    <tr>
+    <td>Viewport Height</td>
+    <td><code>vh</code></td>
+    <td>Una unidad de medida relativa que se basa en la altura de la ventana gráfica (viewport) del dispositivo. Por ejemplo, si un elemento tiene un alto del 50vh, tendrá un alto igual al 50% de la altura de la ventana gráfica del dispositivo.</td>
+    </tr>
+    <tr>
+    <td>Viewport Minimum</td>
+    <td><code>vmin</code></td>
+    <td>Una unidad de medida relativa que se basa en el tamaño más pequeño entre el ancho y la altura de la ventana gráfica del dispositivo. Por ejemplo, si el tamaño mínimo de la ventana gráfica es de 800 píxeles de ancho y 600 píxeles de alto, 1vmin equivaldrá a 6 píxeles (el 1% de 600 píxeles).</td>
+    </tr>
+    <tr>
+    <td>Viewport Maximum</td>
+    <td><code>vmax</code></td>
+    <td>Una unidad de medida relativa que se basa en el tamaño más grande entre el ancho y la altura de la ventana gráfica del dispositivo. Por ejemplo, si el tamaño máximo de la ventana gráfica es de 800 píxeles de ancho y 600 píxeles de alto, 1vmax equivaldrá a 8 píxeles (el 1% de 800 píxeles).</td>
+    </tr>
+    </tbody>
+    </table>
+    <p> </p>
+    <p>Además de las unidades más comunes como px, %, em, rem, vw, vh, existe una variedad de unidades menos utilizadas en CSS, a continuación se detallan algunas de ellas:</p>
+    <ul>
+    <li><strong>in</strong>: unidad de medida en pulgadas.</li>
+    <li><strong>pt</strong>: unidad de medida en puntos, una medida de impresión común.</li>
+    <li><strong>pc</strong>: unidad de medida en picas, una medida de impresión común.</li>
+    <li><strong>cm</strong>: unidad de medida en centímetros.</li>
+    <li><strong>mm</strong>: unidad de medida en milímetros.</li>
+    <li><strong>ex</strong>: unidad de medida basada en la altura de la letra "x" en la fuente actual.</li>
+    <li><strong>ch</strong>: unidad de medida basada en la anchura de la letra "0" en la fuente actual.</li>
+    <li><strong>lh</strong>: unidad de medida basada en la altura de línea de la fuente actual.</li>
+    <li><strong>fr</strong>: unidad de medida que divide el espacio disponible en partes iguales. Por ejemplo, si una fila tiene tres columnas, cada una con una anchura de 1fr, las columnas tendrán la misma anchura.</li>
+    </ul>
+    <p>Es importante tener en cuenta que no todas las unidades son compatibles con todos los navegadores y que algunas unidades pueden tener un comportamiento diferente dependiendo del contexto en el que se utilicen.</p>
+
+
+    <H3>Funciones CSS</H3>
+
+    <p>Las funciones CSS son una serie de herramientas que permiten a los desarrolladores web realizar ciertas tareas específicas al aplicar estilos a una página web. Las funciones pueden ser utilizadas en valores de propiedades CSS para aplicar diferentes efectos y transformaciones en elementos HTML. Las funciones permiten hacer cálculos matemáticos, utilizar variables personalizadas, definir colores, transformaciones, entre otros.</p>
+    <table>
+      <thead>
+      <tr>
+      <th>Nombre de la función</th>
+      <th>Código</th>
+      <th>Explicación</th>
+      <th>Ejemplo</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+      <td>URL</td>
+      <td><code>url()</code></td>
+      <td>Especifica la ubicación de un recurso externo, como una imagen o una fuente, que se utilizará en el documento.</td>
+      <td><code>background-image: url("https://ejemplo.com/imagen.jpg");</code></td>
+      </tr>
+      <tr>
+      <td>RGBA</td>
+      <td><code>rgba()</code></td>
+      <td>Define un color utilizando los valores RGB y un valor de opacidad alpha.</td>
+      <td><code>color: rgba(255, 0, 0, 0.5);</code></td>
+      </tr>
+      <tr>
+      <td>HSLA</td>
+      <td><code>hsla()</code></td>
+      <td>Define un color utilizando los valores HSL y un valor de opacidad alpha.</td>
+      <td><code>background-color: hsla(120, 100%, 50%, 0.3);</code></td>
+      </tr>
+      <tr>
+      <td>GRADIENTE LINEAL</td>
+      <td><code>linear-gradient()</code></td>
+      <td>Crea un fondo que cambia gradualmente de un color a otro en una dirección específica.</td>
+      <td><code>background: linear-gradient(red, yellow);</code></td>
+      </tr>
+      <tr>
+      <td>GRADIENTE RADIAL</td>
+      <td><code>radial-gradient()</code></td>
+      <td>Crea un fondo que cambia gradualmente de un color a otro desde un punto central hacia afuera en todas las direcciones.</td>
+      <td><code>background: radial-gradient(circle, red, yellow);</code></td>
+      </tr>
+      <tr>
+      <td>ROTATAR</td>
+      <td><code>rotate()</code></td>
+      <td>Rota un elemento según un ángulo especificado.</td>
+      <td><code>transform: rotate(45deg);</code></td>
+      </tr>
+      <tr>
+      <td>ESCALAR</td>
+      <td><code>scale()</code></td>
+      <td>Escala un elemento según los valores especificados para el eje X e Y.</td>
+      <td><code>transform: scale(2, 0.5);</code></td>
+      </tr>
+      <tr>
+      <td>TRANSLADAR</td>
+      <td><code>translate()</code></td>
+      <td>Desplaza un elemento según los valores especificados para el eje X e Y.</td>
+      <td><code>transform: translate(50px, -20px);</code></td>
+      </tr>
+      <tr>
+      <td>INCLINAR</td>
+      <td><code>skew()</code></td>
+      <td>Inclina un elemento según los valores especificados para el ángulo y el eje.</td>
+      <td><code>transform: skew(30deg, 20deg);</code></td>
+      </tr>
+      <tr>
+      <td>CÍRCULO</td>
+      <td><code>circle()</code></td>
+      <td>Crea una forma de círculo.</td>
+      <td><code>shape-outside: circle(50%);</code></td>
+      </tr>
+      <tr>
+      <td>ELIPSE</td>
+      <td><code>ellipse()</code></td>
+      <td>Crea una forma de elipse.</td>
+      <td><code>shape-outside: ellipse(50% 50%);</code></td>
+      </tr>
+      <tr>
+      <td>REPETIR</td>
+      <td><code>repeat()</code></td>
+      <td>Especifica cómo se deben repetir las imágenes de fondo.</td>
+      <td><code>background-repeat: repeat-x;</code></td>
+      </tr>
+      <tr>
+      <td>CUENTA</td>
+      <td><code>count()</code></td>
+      <td>Especifica cómo se deben contar las páginas cuando se imprime un documento.</td>
+      <td><code>counter-reset: seccion;</code></td>
+      </tr>
+      <tr>
+      <td>CONTADOR</td>
+      <td><code>counter()</code></td>
+      <td>Crea un contador para un elemento específico.</td>
+      <td><code>content: c</code></td>
+      </tr>
+      <tr>
+      <td>GRADOS</td>
+      <td><code>deg(angle)</code></td>
+      <td>Convierte un ángulo en grados a radianes.</td>
+      <td><code>transform: rotate(deg(45));</code></td>
+      </tr>
+      <tr>
+      <td>ATRIBUTO</td>
+      <td><code>attr(attribute)</code></td>
+      <td>Obtiene el valor de un atributo HTML y lo utiliza en la declaración de estilo.</td>
+      <td><code>content: attr(data-tooltip);</code></td>
+      </tr>
+      <tr>
+      <td>VARIABLE</td>
+      <td><code>var(name, [fallback])</code></td>
+      <td>Utiliza una variable personalizada definida en el :root selector y proporciona un valor de reserva en caso de que la variable no esté definida.</td>
+      <td><code>color: var(--primary-color, blue);</code></td>
+      </tr>
+      <tr>
+      <td>CALCULAR</td>
+      <td><code>calc(expression)</code></td>
+      <td>Realiza cálculos matemáticos en valores CSS.</td>
+      <td><code>width: calc(100% - 20px);</code></td>
+      </tr>
+      </tbody>
+      </table>
